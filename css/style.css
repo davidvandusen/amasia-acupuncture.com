@@ -1,0 +1,668 @@
+/* FONT-FACE
+===================================================================== */
+
+@font-face {
+  font-family: "TeXGyreHerosRegular";
+  src: url("texgyreheros-regular-webfont.eot");
+  src: url("texgyreheros-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("texgyreheros-regular-webfont.woff") format("woff"),
+    url("texgyreheros-regular-webfont.ttf") format("truetype"),
+    url("texgyreheros-regular-webfont.svg#TeXGyreHerosRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* RESET
+===================================================================== */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  overflow-y: scroll;
+}
+
+/* BASE STYLES
+===================================================================== */
+
+html {
+  background: #d1c6d1 url(../img/background.jpg);
+  color: #444;
+}
+body {
+  background: #f1f1f1 url(../img/body.jpg) no-repeat;
+  box-shadow: 0 0 38px rgba(0, 0, 0, 0.09);
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+/* TYPOGRAPHY
+===================================================================== */
+
+/* links */
+a {
+  color: #3b7a7e;
+  text-decoration: none;
+}
+a:hover {
+  color: #1b5a5e;
+  text-decoration: underline;
+}
+a:visited {
+  color: #8e8a40;
+}
+a:visited:hover {
+  color: #6e6a20;
+}
+
+/* headings */
+h1 {
+  color: #52825b;
+  font-family: TeXGyreHerosRegular, sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 36px;
+  margin-bottom: 20px;
+  margin-top: 36px;
+}
+h2 {
+  font-family: TeXGyreHerosRegular, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 24px;
+  margin-bottom: 10px;
+  margin-top: 24px;
+}
+h3 {
+  color: #52825b;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 10px;
+  margin-top: 24px;
+}
+h4 {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* lists */
+dt {
+  clear: left;
+  float: left;
+  margin-right: 10px;
+  padding-right: 20px;
+  width: 60px;
+}
+.ie6 dt {
+  display: inline;
+}
+ol,
+ul {
+  margin: 0 0 20px;
+}
+ol {
+  list-style: decimal;
+  padding-left: 30px;
+}
+ul li {
+  background: url(../img/bullet.png) no-repeat;
+  list-style: none;
+  padding-left: 30px;
+}
+
+/* block level semantics */
+p {
+  margin: 0 0 20px;
+}
+
+/* images */
+img {
+  background: #f2f2f2;
+  border: 1px solid #bbb;
+  padding: 3px;
+}
+
+/* inline */
+abbr {
+  cursor: help;
+}
+b {
+  font-weight: bold;
+}
+small {
+  font-size: 0.85em;
+}
+
+/* classes */
+.figure {
+  margin: 0 0 20px;
+  text-align: center;
+}
+.figure p {
+  font-size: 11px;
+  line-height: 15px;
+  margin: 0;
+}
+
+.jumpline {
+  clear: both;
+  text-align: right;
+}
+.jumpline a {
+  background: #fff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #ffffff),
+    color-stop(100%, #dddddd)
+  );
+  background: -webkit-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+  background: linear-gradient(top, #ffffff 0%, #dddddd 100%);
+  border: 1px solid #c5c5c5;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 5px 10px;
+}
+.ie6 .jumpline a,
+.ie7 .jumpline a,
+.ie8 .jumpline a,
+.ie9 .jumpline a {
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 );
+}
+.jumpline a:visited {
+  color: #3b7a7e;
+}
+.jumpline a:hover {
+  color: #1b5a5e;
+  border-color: #aaa;
+  text-decoration: none;
+}
+
+.payments {
+  text-align: center;
+}
+.payments img {
+  background: transparent;
+  border: 0 none;
+  padding: 0;
+}
+
+/* HEADER
+===================================================================== */
+
+#banner {
+  height: 200px;
+}
+#banner h1 {
+  height: 50px;
+  margin: 0;
+  padding-left: 50px;
+  padding-top: 45px;
+  width: 494px;
+}
+#banner h1 a {
+  display: block;
+  height: 100%;
+  text-indent: -999em;
+  width: 100%;
+}
+#banner p {
+  color: #52825b;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  height: 50px;
+  line-height: 15px;
+  margin: 0;
+  padding-bottom: 0;
+  padding-left: 50px;
+  padding-top: 5px;
+  white-space: nowrap;
+}
+#banner ul {
+  height: 50px;
+  margin: 0;
+  overflow: hidden;
+  padding-left: 35px;
+}
+#banner ul li {
+  background: transparent;
+  float: left;
+  padding: 0;
+}
+#banner ul li a {
+  color: #52825b;
+  display: block;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#banner ul li a:hover {
+  background: #dfe7d2;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Styles for current page in nav menu */
+.about #banner a[href="/about/"],
+.acupuncture #banner a[href="/acupuncture/"],
+.contact #banner a[href="/contact/"],
+.chiropractic #banner a[href="/chiropractic/"],
+.herbs #banner a[href="/herbs/"],
+.home #banner a[href="/"],
+.insurance #banner a[href="/insurance/"],
+.services #banner a[href="/services/"] {
+  background: #e6ecda;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* CONTENT
+===================================================================== */
+
+/* Defaults */
+.clear {
+  clear: both;
+}
+.secondary {
+  float: right;
+  padding: 80px 50px 50px 0;
+  width: 300px;
+}
+.section {
+  clear: both;
+}
+#main {
+  float: left;
+  padding: 10px 0 50px 50px;
+  width: 500px;
+}
+
+/* About & chiro pages */
+.about .secondary {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  font-size: 11px;
+  margin: 79px 30px 30px 0;
+  padding: 0 19px 19px;
+}
+.about .secondary h3,
+.chiropractic .secondary h3 {
+  background: #cedbb7;
+  margin-bottom: 0;
+  margin-top: 10px;
+  padding: 3px 5px;
+}
+.about .secondary ul,
+.chiropractic .secondary ul {
+  background: #f4f4f4;
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  padding: 5px;
+}
+.about .secondary ul li,
+.chiropractic .secondary ul li {
+  background-position: 0 -3px;
+  line-height: 1.33;
+  margin-bottom: 0.5em;
+  padding-left: 25px;
+}
+.about #portrait-1 {
+  float: left;
+  margin: 0 15px 10px 0;
+}
+.about #portrait-2 {
+  float: right;
+  margin: 0 0 10px 15px;
+}
+.about #slideshow {
+  clear: both;
+  margin: 50px 0 0;
+  text-align: center;
+}
+.about #slideshow img {
+  display: block;
+  margin: 0 auto;
+}
+.about #slideshow .next {
+  float: right;
+}
+.about #slideshow .prev {
+  float: left;
+}
+.about #slideshow .slides_container {
+  width: 500px;
+}
+.about #slideshow .slides_container .slide {
+  background: #ddd;
+  padding: 10px 0 25px;
+  position: relative;
+  width: 500px;
+}
+.about #slideshow .slides_container .slide p {
+  background: #000;
+  background: rgba(0, 0, 0, 0.75);
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  margin: 0;
+  padding: 10px;
+  position: absolute;
+  width: 480px;
+}
+
+.chiropractic .secondary {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  margin: 79px 30px 30px 0;
+  padding: 0 19px 19px;
+}
+.chiropractic #portrait-dion {
+  float: left;
+  margin: 0 10px 15px 0;
+}
+
+/* Services page */
+.services .secondary {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  float: right;
+  margin: 79px 20px 30px 0;
+  padding: 0 29px 19px;
+  width: 400px;
+}
+.services #main {
+  width: 400px;
+}
+
+.ailments li,
+#treatment-durations-legend dt {
+  border-bottom: 1px solid #c2c2c2;
+  border-right: 1px solid #c2c2c2;
+  border-radius: 4px;
+  color: #222;
+  font-size: 11px;
+  line-height: 14px;
+}
+#treatment-durations-legend dt {
+  text-align: right;
+  margin-bottom: 4px;
+  padding: 1px 4px;
+}
+.ailments li {
+  display: inline-block;
+  margin-bottom: 3px;
+  padding: 3px 6px;
+}
+.treatment-duration-short {
+  background: #e8e8cc;
+}
+.treatment-duration-medium {
+  background: #cce8cc;
+}
+.treatment-duration-long {
+  background: #cddfe8;
+}
+
+/* Insurance page */
+.insurance .jumpline {
+  text-align: center;
+}
+.insurance #inquiry {
+  padding-right: 400px;
+}
+.insurance #inquiry .figure {
+  float: right;
+  margin-right: -400px;
+  padding-left: 40px;
+  width: 360px;
+}
+.ie6 .insurance #inquiry .figure {
+  display: inline;
+}
+.insurance #inquiry .figure img {
+  background: transparent;
+  border: 0 none;
+  padding: 0;
+}
+.insurance #main {
+  float: none;
+  width: 860px;
+}
+.insurance #preferred-providers {
+  padding-bottom: 60px;
+}
+.insurance #preferred-providers ul {
+  -moz-column-count: 4;
+  -webkit-column-count: 4;
+  column-count: 4;
+  -moz-column-gap: 12px;
+  -webkit-column-gap: 12px;
+  column-gap: 12px;
+  font-size: 12px;
+}
+
+/* Contact page */
+.contact .secondary {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  margin: 70px 30px 30px 0;
+  padding: 19px;
+}
+.contact #map_canvas {
+  border: 1px solid #bbb;
+  height: 218px;
+  margin: 20px 0 0;
+}
+.contact #map_canvas img {
+  background: transparent;
+}
+
+/* Home page */
+.home h2 a {
+  color: #3b7a7e;
+}
+.home h2 a:hover {
+  color: #1b5a5e;
+}
+.home .secondary {
+  clear: both;
+  float: none;
+  margin: 0 30px;
+  padding: 0;
+  width: 900px;
+}
+.home .secondary .section {
+  clear: none;
+  float: left;
+  margin: 0;
+  padding: 0 20px 30px;
+  width: 260px;
+}
+.home #main {
+  background: #fff url(../img/splash.jpg) no-repeat;
+  border: 1px solid #ddd;
+  float: none;
+  height: 400px;
+  margin: 29px 29px 9px;
+  padding: 0;
+  position: relative;
+  width: 900px;
+}
+
+.home #about-section {
+  width: 560px;
+}
+.home #contact-section {
+  background: #fff;
+  height: 400px;
+  padding: 0 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 260px;
+}
+.home #contact-section img {
+  border: 0 none;
+  bottom: 20px;
+  left: 20px;
+  padding: 0;
+  position: absolute;
+  width: 260px;
+}
+.home #contact-section p {
+  margin-bottom: 15px;
+}
+.home #insurance-section {
+  background: #e5e5e5;
+  border: 1px solid #ccc;
+  padding: 0 19px;
+}
+.home #services-section {
+  height: 360px;
+  left: 360px;
+  padding: 0 20px;
+  position: absolute;
+  top: 20px;
+  width: 180px;
+}
+.home #services-section h2 {
+  font: bold 18px/20px Arial, sans-serif;
+  margin-bottom: 16px;
+}
+.home #services-section li {
+  background: transparent;
+  font-size: 12px;
+  line-height: 16px;
+  list-style: square;
+  margin-bottom: 8px;
+  margin-left: 12px;
+  padding-left: 0;
+}
+
+/* FOOTER
+===================================================================== */
+
+#contentinfo {
+  background: #c8d1a6;
+  clear: both;
+  padding: 25px 50px;
+}
+#contentinfo a {
+  color: #3b7a7e;
+}
+#contentinfo ul {
+  float: right;
+}
+#contentinfo ul li {
+  background: transparent;
+  display: inline;
+  padding: 0 0 0 0.5em;
+}
